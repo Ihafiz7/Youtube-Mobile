@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title, .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.noti-type{
+    display: flex;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.noti-type > button{
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+}
+
+.noti-type >button:active{
+    background: black;
+    color: white;
+}
+
+.all-noti{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.mentions{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.dot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 5;
+    right: 0;
+    background: white;
+    padding: 10px;
+    box-shadow: -2px 0 2px rgba(0, 0, 0, 0.1), 0 -2px 2px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}

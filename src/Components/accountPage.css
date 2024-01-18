@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+header{
+    display: flex;
+    width: 100vw;
+}
+
+.header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-con{
+    display: flex;
+    gap: 20px;
+}
+
+.accounts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acc-details{
+    display: flex;
+    flex-direction: column;
+    gap: -5px;
+}
+
+.acc-details > p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.acc-details > p > span {
+    font-size: 14px;
+}
+
+.account-picture{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.historys{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.history{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.history > button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.history > button:hover{
+    background: black;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+
+}
+.buttons > button {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    gap: 5px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.buttons > button > span{
+    font-size: 16px;
+}
+
+.acc-etc{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

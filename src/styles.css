@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    padding: 10px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1/1;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+

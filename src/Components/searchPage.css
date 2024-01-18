@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-page{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    height: 50px;
+    gap: 10px;
+}
+
+.search-page > input {
+    width: 85vw;
+    border: none;
+    background-color: rgba(216, 224, 224, 0.37);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.search-page > p{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding:5px;
+    background-color:rgba(216, 224, 224, 0.37) ;
+}
+
+.search-history > li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-history > li >span{
+    width: 85vw;
+    cursor: pointer;
+}
