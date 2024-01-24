@@ -24,7 +24,7 @@ const Navbar = () => {
             <i className='material-icons'>smart_display</i>
             <span>Shorts</span>
         </div>
-        <div className='nav-items' onClick={() => handleClick('createClick')}>
+        <div className='nav-items' onClick={(event) => handleClick(event, 'createClick')}>
             <p><i className='material-icons'>add</i></p>   
         </div>
         <div className='nav-items'>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className='create'>
                 <div className='create-title'>
                 <h3>Create</h3>
-                <i className='material-icons' onClick={() => handleClick('createClick')}>close</i>
+                <i className='material-icons' onClick={(event) => handleClick(event, 'createClick')}>close</i>
                 </div>
                 <div className='create-elems'>
                     <i className='material-icons'>smart_display</i>

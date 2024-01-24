@@ -9,7 +9,6 @@ import Cast from './Cast';
 const NotificationPage = () => {
 
     const {click, handleClick} = useClick();
-    console.log(click)
 
   return (
     <div className='main'>
@@ -19,14 +18,14 @@ const NotificationPage = () => {
                 <p>Notifications</p>
             </div>
             <div className='icons'>
-                <i className='material-icons' onClick={() => handleClick('castClick')}>cast</i>
+                <i className='material-icons' onClick={(event) => handleClick(event, 'castClick')}>cast</i>
                 <Link to="/search" className='link material-icons'>search</Link>
-                <i className='material-icons' onClick={() => handleClick('dotsClick')}>more_vert</i>
+                <i className='material-icons' onClick={(event) => handleClick(event, 'dotsClick')}>more_vert</i>
             </div>
         </header>
         <div className='noti-type'>
-            <button onClick={() => handleClick('allButtonClick')}>All</button>
-            <button onClick={() => handleClick('mentionsButtonClick')}>Mentions</button>
+            <button onClick={(event) => handleClick(event, 'allButtonClick')}>All</button>
+            <button onClick={(event) => handleClick(event, 'mentionsButtonClick')}>Mentions</button>
         </div>
         {click.allButtonClick && !click.mentionsButtonClick && (
             <div className='all-noti'>

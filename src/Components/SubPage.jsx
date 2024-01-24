@@ -34,7 +34,7 @@ const SubPage = () => {
             <button>Continue watching</button>
             <button>Unwatched</button>
             <button>Posts</button>
-            <p onClick={() => handleClick('subPageSettingsClick')}>Settings</p>
+            <p onClick={(event) => handleClick(event, 'subPageSettingsClick')}>Settings</p>
        </div>
        <div></div>
        <div>
@@ -47,7 +47,7 @@ const SubPage = () => {
             <p className='p-without-span'>Videos and posts</p>
             <p className='p-without-span'>Videos Only</p>
             <hr />
-            <p className='material-icons p-with-span' onClick={() => handleClick('subPageSettingsClick')}>close <span>Cancel</span></p>
+            <p className='material-icons p-with-span' onClick={(event) => handleClick(event, 'subPageSettingsClick')}>close <span>Cancel</span></p>
         </div>
        )}
        

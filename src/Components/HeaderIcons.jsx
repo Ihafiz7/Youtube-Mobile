@@ -11,7 +11,7 @@ const HeaderIcons = () => {
   return (
     <div>
         <div className='header-icons'>
-            <i className='material-icons' onClick={() => handleClick('castClick')}>cast</i>
+            <i className='material-icons' onClick={(event) => handleClick(event, 'castClick')}>cast</i>
             <Link to="/notifications" className='link'>
                 <i className='material-icons'>notifications</i>
             </Link>

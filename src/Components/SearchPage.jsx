@@ -23,7 +23,6 @@ const SearchPage = () => {
     // get saved data
     try {
       const savedHistoryString = localStorage.getItem('searchHistory');
-      // console.log('Saved History:', savedHistoryString);
       const savedHistory = JSON.parse(savedHistoryString) || [];
       SetSearchHistory(savedHistory);
     } catch (error) {

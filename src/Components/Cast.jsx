@@ -6,7 +6,7 @@ const Cast = () => {
   const { handleClick } = useClick();
   return (
     <div className='cast'>
-      <h3> <span className='material-icons' onClick={() => handleClick("castClick")}>arrow_back</span> Connect to a device</h3>
+      <h3> <span className='material-icons' onClick={(event) => handleClick(event, "castClick")}>arrow_back</span> Connect to a device</h3>
       <p>No device found</p>
       <div className='cast-div'>
       <i className='material-icons'>connected_tv</i>

@@ -13,33 +13,28 @@ export const ClickProvider = ({ children }) => {
     });
 
 
-    const handleClick = (type) => {
-        // console.log('handleClick called :', type);
+    const handleClick = (event, type) => {
+        event.stopPropagation();
         setClick((prevClick) => ({
             ...prevClick,
             [type] : !prevClick[type],
         }));
     };
-    // console.log("before:",click);
 
-    // const closeClick = () => {
-    //     console.log("Closing clicks...");
-    //     setClick(() => ({
-    //         castClick: false,
-    //         createClick:false,
-    //         dotsClick: false,
-    //     }))
-    // }
-    // //click anywhere to close the windows
-    // React.useEffect(() => {
-    //     console.log("Effect is running...");
-    //     (click.castClick || click.createClick || click.dotsClick) && document.addEventListener("click", closeClick);
-    //     return () => { 
-    //         console.log("Cleanup function is running...");
-    //         (click.castClick || click.createClick || click.dotsClick) && document.removeEventListener("click", closeClick) }
-    // },[click.castClick, click.createClick , click.dotsClick]);
+    const closeClick = () => {
+        setClick(() => ({
+            castClick: false,
+            createClick:false,
+            dotsClick: false,
+        }))
+    }
+    //click anywhere to close the windows
+    React.useEffect(() => {
+        (click.castClick || click.createClick || click.dotsClick) && document.addEventListener("click", closeClick);
+        return () => { 
+            (click.castClick || click.createClick || click.dotsClick) && document.removeEventListener("click", closeClick) }
+    },[click.castClick, click.createClick , click.dotsClick]);
 
-    // console.log("after:",click);
 
     
 
